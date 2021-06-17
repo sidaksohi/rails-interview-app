@@ -1,0 +1,20 @@
+<p>
+  <strong>Behavioral Score:</strong>
+  <%= score.behavioral %>
+</p>
+
+<p>
+  <strong>Technical Score:</strong>
+  <%= score.technical %>
+</p>
+
+<p>
+  <strong>Note:</strong>
+  <%= score.note %>
+</p>
+
+<p>
+  <%= link_to 'Delete Score', [ score.interview, score ],
+              method: :delete,
+              data: { confirm: "Are you sure?" } %>
+</p>

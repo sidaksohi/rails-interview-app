@@ -1,0 +1,21 @@
+<%= form_with model: [ @interview, @interview.build_score ] do |form| %>
+
+	  <div class="field">
+	    <%= form.label :behavioral %>
+	    <%= form.select :behavioral, [ '1', '2', '3', '4', '5' ] %>
+	  </div>
+
+	  <div class="field">
+	    <%= form.label :technical %>
+	    <%= form.select :technical, [ '1', '2', '3', '4', '5' ] %>
+	  </div>
+
+	  <div class="field">
+	    <%= form.label :note %>
+	    <%= form.text_field :note %>
+	  </div>
+
+	  <div class="actions">
+	    <%= form.submit %>
+	  </div>
+<% end %>

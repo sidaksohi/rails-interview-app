@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  behavioral: 1
+  technical: 1
+  note: MyString
+  interview: one
+
+two:
+  behavioral: 1
+  technical: 1
+  note: MyString
+  interview: two

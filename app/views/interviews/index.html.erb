@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Interviews</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Job</th>
+      <th>Interviewer</th>
+      <th>Candidate</th>
+      <th>Behavioral</th>
+      <th>Technical</th>
+      <th>Note</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @interviews.each do |interview| %>
+      <tr>
+        <td><%= interview.candidate.job.title %></td>
+        <td><%= interview.interviewer.name %></td>
+        <td><%= interview.candidate.name %></td>
+        <% if interview.score != nil %>
+        <td><%= interview.score.behavioral %></td>
+        <td><%= interview.score.technical %></td>
+        <td><%= interview.score.note %></td>
+        <% else %>
+        <td>n/a</td>
+        <td>n/a</td>
+        <td>n/a</td>
+        <% end %>
+        <td><%= link_to 'Show', interview %></td>
+        <td><%= link_to 'Edit', edit_interview_path(interview) %></td>
+        <td><%= link_to 'Destroy', interview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Interview', new_interview_path %>
+<br><br>
+<%= link_to 'View Candidates', candidates_path %>
+<br>
+<%= link_to 'View Interviewers', interviewers_path %>
+<br>
+<%= link_to 'View Jobs', jobs_path %>
