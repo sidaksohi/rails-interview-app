@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Interviewers</h1>
+<div class="title">
+  Interviewers
+</div>
 
-<table>
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
     <tr>
       <th>Name</th>
@@ -26,10 +28,8 @@
 
 <br>
 
-<%= link_to 'New Interviewer', new_interviewer_path %>
-<br><br>
-<%= link_to 'View Candidates', candidates_path %>
-<br>
-<%= link_to 'View Interviews', interviews_path %>
-<br>
-<%= link_to 'View Jobs', jobs_path %>
+<div class="buttons">
+          <a class="button is-primary" href=interviewers/new>
+            New Interviewers
+          </a>
+</div>

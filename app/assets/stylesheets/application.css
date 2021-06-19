@@ -13,3 +13,19 @@
  *= require_tree .
  *= require_self
  */
+nav {
+	margin-bottom: 20px;
+}
+
+.button.is-primary {
+	background-color: #cf9800 !important;
+}
+
+.subtitle {
+	font-size: 12px !important;
+	align-items: center !important;
+}
+
+#footerText {
+	transform: translateX(40%);
+}

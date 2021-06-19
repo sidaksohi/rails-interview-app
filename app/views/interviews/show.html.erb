@@ -15,10 +15,10 @@
   <%= @interview.candidate.name %>
 </p>
 
-<% if @interview.score == nil %>
-	<%= render 'scores/form' %>
-<% else %>
+<% if @interview.score.present? %>
 	<%= render @interview.score %>
+<% else %>
+	<%= render 'scores/form' %>
 <% end %>
 
 
