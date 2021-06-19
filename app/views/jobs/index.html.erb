@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Jobs</h1>
+<div class="title">
+  Jobs
+</div>
 
-<table>
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
     <tr>
       <th>Title</th>
@@ -26,10 +28,10 @@
 
 <br>
 
-<%= link_to 'New Job', new_job_path %>
-<br><br>
-<%= link_to 'View Candidates', candidates_path %>
-<br>
-<%= link_to 'View Interviews', interviews_path %>
-<br>
-<%= link_to 'View Interviewers', interviewers_path %>
+<div class="container">
+  <div class="buttons">
+            <a class="button is-primary" href=jobs/new>
+              New Job
+            </a>
+  </div>
+</div>

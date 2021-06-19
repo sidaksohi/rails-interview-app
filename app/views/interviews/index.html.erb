@@ -1,8 +1,10 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Interviews</h1>
+<div class="title">
+  Interviews
+</div>
 
-<table>
+<table class="table is-bordered is-striped is-narrow is-hoverable is-fullwidth">
   <thead>
     <tr>
       <th>Job</th>
@@ -21,7 +23,7 @@
         <td><%= interview.candidate.job.title %></td>
         <td><%= interview.interviewer.name %></td>
         <td><%= interview.candidate.name %></td>
-        <% if interview.score != nil %>
+        <% if interview.score.present? %>
         <td><%= interview.score.behavioral %></td>
         <td><%= interview.score.technical %></td>
         <td><%= interview.score.note %></td>
@@ -32,7 +34,9 @@
         <% end %>
         <td><%= link_to 'Show', interview %></td>
         <td><%= link_to 'Edit', edit_interview_path(interview) %></td>
-        <td><%= link_to 'Destroy', interview, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to 'Destroy', interview, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </td>
       </tr>
     <% end %>
   </tbody>
@@ -40,10 +44,8 @@
 
 <br>
 
-<%= link_to 'New Interview', new_interview_path %>
-<br><br>
-<%= link_to 'View Candidates', candidates_path %>
-<br>
-<%= link_to 'View Interviewers', interviewers_path %>
-<br>
-<%= link_to 'View Jobs', jobs_path %>
+<div class="buttons">
+          <a class="button is-primary" href=interviews/new>
+            New Interview
+          </a>
+</div>
