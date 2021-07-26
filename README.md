@@ -6,6 +6,7 @@
 -User Profiles & Roles
 -Different views for each role
 -Search function
+-Address vulnerabilities found in outdated gems
 
 #### Done:
 -Basic HTML/CSS structure + Logo
