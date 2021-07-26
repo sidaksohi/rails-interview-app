@@ -1,11 +1,19 @@
 # README
+### Currently In Development
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+#### To Add:
+-Login and Authentication
+-User Profiles & Roles
+-Different views for each role
+-Search function
 
-Things you may want to cover:
+#### Done:
+-Basic HTML/CSS structure + Logo
+-Data models and relationships
+-CRUD Functionality for each model
+-REST API in JSON format
 
-* Ruby version
+## Ruby version
 
 Rails version: 6.1.3.2
 https://guides.rubyonrails.org/v6.1
@@ -15,42 +23,42 @@ https://ruby-doc.org/core-2.5.9
 
 
 
-* Configuration
+## Configuration
 
 [pk]=primary key
 [fk]=foreign key
 
-**Jobs**
+#### Jobs
 [pk]job_id
 -job title
 -job description
 
-**Candidates**
+#### Candidates
 [pk]candidate_id
 -name
 -yoe
 -description
 [fk]job_id
 
-**Interviewers**
+#### Interviewers
 [pk]interviewer_id
 -name
 -job_title
 
-**Interview**
+#### Interview
 [pk]interview_id
 [fk]interviewer_id
 [fk]candidate_id
 score_id
 
-**Score**
+#### Score
 [pk]score_id
 -behavorial
 -technical
 -note
 [fk]interview_id
 
-
+------------in progress------------
 * System dependencies
 
 * Database creation
