@@ -1,6 +1,25 @@
 # README
 ### Currently In Development
 
+#### The interview process is inefficient, incosistent, and is often times a time-sink for companies, who may not have resources to sufficiently interview each candidate in a timely manner.
+
+#### The solution? 
+- An web-based, open-source, transparent site - where candidates can complete generalized challenges for a language or framework, which they can use to apply to multiple companies.
+- The company would be able to select which challenges they accept and even request new sub-challenges.
+- This system would be one big step closer to optimizing our industry's interview process.
+
+##### For Interviewees:
+- No more 'gotcha' questions. No more cramming leetcode for weeks, hoping that you get questions which have practiced recently.
+- Can check the status of your application at any time, including interviewee notes/scores in real time
+- All challenges would be applicable to real-life scenarios, so each question you study will advance your skills for your career
+
+##### For Interviewers:
+- Candidates that are more qualified for the work your company does on a day-to-day basis
+- Faster interview process
+
+-----------------------------------------------------
+### Features
+
 #### To Add:
 -Login and Authentication
 -User Profiles & Roles
